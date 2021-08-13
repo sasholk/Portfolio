@@ -1,0 +1,42 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz36 {
+        font-size: 36px;
+    }
+    &_fz48 {
+        font-size: 48px;
+    }
+    &_center {
+        text-align: center;
+    }
+    &_subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle
+    }
+    &_subtitle_center {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        @include before_circle;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

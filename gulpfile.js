@@ -75,7 +75,7 @@ function build() {
 }
 
 function watching() {
-    watch(['src/scss/**/*.scss'], styles); // автоматическое обновление (если есть измения - запускается gulp styles)
+    watch(['src/sass/**/*.scss'], styles); // автоматическое обновление (если есть измения - запускается gulp styles)
     watch(['src/js/**/*.js', '!src/js/script.min.js'], scripts); // восклицательный знак обозначает исключение (здесь watch не будет следить за min.js)
     watch(['src/*.html']).on('change', browserSync.reload);
 } 
