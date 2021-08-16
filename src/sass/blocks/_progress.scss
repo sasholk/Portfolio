@@ -1,0 +1,28 @@
+.progress {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns:  repeat(3, 350px);
+    grid-template-rows: minmax(70, auto);
+    gap: 30px 45px;
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__percent {
+        justify-self: end;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__scale {
+        margin-top: 27px;
+        width: 350px;
+        height: 14px;
+        background-color: #E8E4DE;
+        border-radius: 4px;
+        &-fill {
+            background-color: $main-color;
+            height: 14px;
+            border-radius: 4px;
+        }
+    }
+}
