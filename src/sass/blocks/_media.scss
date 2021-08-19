@@ -6,8 +6,7 @@
         display: none;
     }
     .about__wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-rows: minmax(200px, auto);
+        grid-template: minmax(200px, auto) / repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: minmax(200px, auto);
     }
     .portfolio__wrapper .horizontal {
@@ -78,8 +77,11 @@
             width: 300px;
         }
     }
+    .about__wrapper {
+        grid-template-rows: 340px;
+    }
     .about__img {
-        grid-row: 1/2;
+        grid-row: auto;
     }
     .resume {
         padding-top: 60px;
