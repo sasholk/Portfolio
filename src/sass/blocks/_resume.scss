@@ -6,7 +6,7 @@
     &__wrapper {
         padding: 60px 65px 0;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         column-gap: 135px;
     }
     &__column{

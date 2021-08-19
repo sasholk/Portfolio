@@ -30,7 +30,7 @@
     }
     &__skills {
         display: grid;
-        grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
+        grid-template: repeat(auto-fit, minmax(115px, auto))/ repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: 1fr;
         gap: 20px 50px;
     }

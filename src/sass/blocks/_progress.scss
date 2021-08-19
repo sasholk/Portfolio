@@ -1,8 +1,9 @@
 .progress {
-    margin-top: 120px;
+    padding-top: 120px;
     display: grid;
-    grid-template-columns:  repeat(3, 350px);
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 350px));
     grid-template-rows: minmax(70, auto);
+    justify-content: center;
     gap: 30px 45px;
     &__header {
         display: grid;

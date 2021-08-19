@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .about__wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: minmax(200px, auto);
+        grid-auto-rows: minmax(200px, auto);
+    }
+    .portfolio__wrapper .horizontal {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .portfolio__wrapper .vertical {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 375px 550px;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about, .resume, .skill, .progress, .portfolio, .contacts {
+        padding-top: 80px;
+    }
+    .contacts {
+        padding: 80px 0 90px;
+    }
+    .resume__wrapper, .skill__wrapper, .portfolio__wrapper {
+        padding: 40px 0 0;
+    }
+
+    .contacts{
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__photo {
+            display: none;
+        }
+        &__form {
+            grid-template: 45px 45px 190px 45px / 1fr;
+        }
+        &__textarea {
+            grid-column: auto;
+        }
+        &__triggers {
+            grid-column: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;    
+        }
+        &_fz36 {
+            font-size: 25px;    
+        }
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about__img {
+        grid-row: 1/2;
+    }
+    .resume {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;    
+        }
+    }
+    .menu__block  {
+        width: 250px;
+        padding-left: 20px;
+    }
+    .menu__link::before {
+        left: -35px;
+    }
+    .promo__link {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .about, .resume, .skill, .progress, .portfolio {
+        padding-top: 40px;
+    }
+    .about__descr .divider {
+        margin-top: 15px;
+    }
+    .title_fz36 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 26px;
+    }
+    .divider {
+        margin: 15px auto 0;
+    }
+    .progress__scale {
+        width: 100%;
+    }
+    .contacts {
+        padding: 40px 0 50px;
+    }
+}
